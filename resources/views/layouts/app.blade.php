@@ -17,11 +17,9 @@
     </head>
     <body class="antialiased">
         <div id="app">
-            <div class="h-20 flex items-center bg-blue-100">
-                <p>{{config('app.name', 'Webアンケート作成')}}</p>
-            </div>
+            <x-header></x-header>
     
-            <main class="my-5">
+            <main class="py-5 bg-gray-100">
                 {{$slot}}
             </main>
         </div>
@@ -29,6 +27,5 @@
 
         <!-- JS -->
         <script src="{{mix('js/app.js')}}" defer></script>
-        <script src="{{mix('js/main.js')}}"></script>
     </body>
 </html>

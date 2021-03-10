@@ -9,7 +9,7 @@ class FormMaster extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['formats', 'key', 'user_id'];
+    protected $fillable = ['formats', 'form_key', 'answer_key', 'user_id'];
 
     protected $cast = [
         'formats'=>'json'

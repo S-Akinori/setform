@@ -17,7 +17,8 @@ class CreateFormMastersTable extends Migration
             $table->id();
             $table->timestamps();
             $table->unsignedBigInteger('user_id')->nullable();
-            $table->string('key');
+            $table->string('form_key');
+            $table->string('answer_key');
             $table->json('formats')->nullable();
         });
     }

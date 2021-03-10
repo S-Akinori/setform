@@ -14,14 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/{any}', function () {
     return view('welcome');
-});
+})->where('any', '.*');
 
-Route::get('/form/create', function () {
-    return view('form.create');
-});
-Route::get('/form/{key}', [FormController::class, 'show'])->name('form.show');
-Route::post('/form', [FormController::class, 'store'])->name('form.store');
-Route::post('/form/answer', [FormController::class, 'storeAnswers'])->name('form.answer');
-Route::get('/form/{id}/answer', [FormController::class, 'showAnswer'])->name('form.showAnswer');
+// Route::get('/form/create', function () {
+//     return view('form.create');
+// });
+// Route::get('/form/{key}', [FormController::class, 'show'])->name('form.show');
+// Route::post('/form', [FormController::class, 'store'])->name('form.store');
+// Route::post('/form/answer', [FormController::class, 'storeAnswers'])->name('form.answer');
+// Route::get('/form/{id}/answer', [FormController::class, 'showAnswer'])->name('form.showAnswer');

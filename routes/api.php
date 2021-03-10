@@ -20,4 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/{id}', [FormController::class, 'index']);
+Route::get('/form/{key}', [FormController::class, 'show']);
+Route::post('/form', [FormController::class, 'store']);
+Route::get('/answers/{key}', [FormController::class, 'showAnswers']);
+Route::post('/answers', [FormController::class, 'storeAnswers']);
