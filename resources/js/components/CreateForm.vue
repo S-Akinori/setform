@@ -198,8 +198,8 @@ export default {
             return this.inputGroups[index]
         },
         create: function() {
-            this.isActive = true
-            var inputGroups = this.inputGroups
+            this.isActive = true;
+            var inputGroups = this.inputGroups;
 
             for(var key in inputGroups) {
                 inputGroups[key]['id'] = key
@@ -215,7 +215,7 @@ export default {
             .then((response) => {
                 console.log('submitted', response)
                 console.log(response['data']['form_key'])
-                this.$router.push('/form/' + response['data']['form_key'])
+                this.$router.push('/form/info/' + response['data']['form_key'] + '/' + response['data']['answer_key'])
             })
             .catch((error) => {
                 console.log('submit error', error)

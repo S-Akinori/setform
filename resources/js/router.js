@@ -6,6 +6,7 @@ import CreateForm from './components/CreateForm.vue'
 import ShowForm from './components/ShowForm.vue'
 import ThankyouPage from './components/ThankyouPage.vue'
 import ShowAnswers from './components/ShowAnswers.vue'
+import Information from './components/Information.vue'
 
 export default new VueRouter({
     mode: 'history',
@@ -19,6 +20,16 @@ export default new VueRouter({
             path: '/form/thankyou',
             name: 'form.thankyou',
             component: ThankyouPage
+        },
+        {
+            path: '/form/thankyou',
+            name: 'form.thankyou',
+            component: ThankyouPage
+        },
+        {
+            path: '/form/info/:formKey/:answerKey',
+            name: 'form.information',
+            component: Information
         },
         {
             path: '/form/:key',
