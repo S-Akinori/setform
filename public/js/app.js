@@ -1897,83 +1897,88 @@ __webpack_require__.r(__webpack_exports__);
       isActive: false,
       newTitle: '',
       selected: 'text',
-      inputGroups: [{
-        id: 0,
-        title: 'Text',
-        type: 'text',
-        name: 'answer0',
-        editable: false,
-        validation: {
-          required: true
-        },
-        description: '',
-        inputs: [{
-          id: 0,
-          label: 'ラベル0',
-          editable: false
-        }]
-      }, {
-        id: 1,
-        title: 'Check',
-        type: 'checkbox',
-        name: 'answer1[]',
-        editable: false,
-        validation: {
-          required: true
-        },
-        description: '',
-        inputs: [{
-          id: 0,
-          label: 'ラベル0',
-          editable: false
-        }]
-      }, {
-        id: 2,
-        title: 'Radio',
-        type: 'radio',
-        name: 'answer2',
-        editable: false,
-        validation: {
-          required: true
-        },
-        description: '',
-        inputs: [{
-          id: 0,
-          label: 'ラベル0',
-          editable: false
-        }]
-      }, {
-        id: 3,
-        title: 'Text area',
-        type: 'textarea',
-        name: 'answer3',
-        editable: false,
-        validation: {
-          required: true
-        },
-        description: '',
-        inputs: [{
-          id: 0,
-          label: 'ラベル0',
-          editable: false
-        }]
-      }, {
-        id: 4,
-        title: 'File',
-        type: 'file',
-        name: 'answer4',
-        editable: false,
-        validation: {
-          required: true
-        },
-        description: '',
-        inputs: [{
-          id: 0,
-          label: 'ラベル0',
-          editable: false
-        }]
-      }],
-      nextInputGroupId: 5
+      inputGroups: [// {
+        //     id: 0,
+        //     title: 'Text',
+        //     type: 'text',
+        //     name: 'answer0',
+        //     editable: false,
+        //     validation: {required: true},
+        //     description: '',
+        //     inputs: [
+        //         {
+        //             id: 0,
+        //             label: 'ラベル0',
+        //             editable: false,
+        //         }
+        //     ],
+        // },
+        // {
+        //     id: 1,
+        //     title: 'Check',
+        //     type: 'checkbox',
+        //     name: 'answer1[]',
+        //     editable: false,
+        //     validation: {required: true},
+        //     description: '',
+        //     inputs: [
+        //         {
+        //             id: 0,
+        //             label: 'ラベル0',
+        //             editable: false,
+        //         }
+        //     ],
+        // },
+        // {
+        //     id: 2,
+        //     title: 'Radio',
+        //     type: 'radio',
+        //     name: 'answer2',
+        //     editable: false,
+        //     validation: {required: true},
+        //     description: '',
+        //     inputs: [
+        //         {
+        //             id: 0,
+        //             label: 'ラベル0',
+        //             editable: false,
+        //         }
+        //     ],
+        // },
+        // {
+        //     id: 3,
+        //     title: 'Text area',
+        //     type: 'textarea',
+        //     name: 'answer3',
+        //     editable: false,
+        //     validation: {required: true},
+        //     description: '',
+        //     inputs: [
+        //         {
+        //             id: 0,
+        //             label: 'ラベル0',
+        //             editable: false,
+        //         }
+        //     ],
+        // },
+        // {
+        //     id: 4,
+        //     title: 'File',
+        //     type: 'file',
+        //     name: 'answer4',
+        //     editable: false,
+        //     validation: {required: true},
+        //     description: '',
+        //     inputs: [
+        //         {
+        //             id: 0,
+        //             label: 'ラベル0',
+        //             editable: false,
+        //         }
+        //     ],
+        // },
+      ],
+      nextInputGroupId: 0
     };
   },
   methods: {
@@ -21192,10 +21197,6 @@ var render = function() {
                   _vm._v("ラジオボタン")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "file" } }, [
-                  _vm._v("ファイル")
-                ]),
-                _vm._v(" "),
                 _c("option", { attrs: { value: "email" } }, [
                   _vm._v("メールアドレス")
                 ])
@@ -21507,7 +21508,7 @@ var staticRenderFns = [
             "\n                「ツール」から「スクリプトエディタ」を開く\n                "
           ),
           _c("img", {
-            staticClass: "w-3/4",
+            staticClass: "max-w-lg",
             attrs: { src: "/storage/img/capture.png", alt: "" }
           })
         ]),
@@ -21542,10 +21543,10 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("li", { staticClass: "my-5" }, [
           _vm._v(
-            "\n                「実行」を押すとデータが書き込まれます\n                "
+            "\n                「実行」を押すとデータが書き込まれます \n                "
           ),
           _c("img", {
-            staticClass: "w-3/4",
+            staticClass: "max-w-lg",
             attrs: { src: "/storage/img/capture1.png", alt: "" }
           })
         ])

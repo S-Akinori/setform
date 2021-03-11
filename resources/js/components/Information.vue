@@ -18,7 +18,7 @@
                 <li class="my-5">新しくスプレッドシートを作成する</li>
                 <li class="my-5">
                     「ツール」から「スクリプトエディタ」を開く
-                    <img src="/storage/img/capture.png" alt="" class="max-w-xl">
+                    <img src="/storage/img/capture.png" alt="" class="max-w-lg">
                 </li>
                 <li class="my-5">以下のURLからコードをコピーして「スクリプトエディタ」に貼り付ける<br>
                     <a href="https://gist.github.com/S-Akinori/24820c0aa19343d37aa636d671128dc0" class="underline">https://gist.github.com/S-Akinori/24820c0aa19343d37aa636d671128dc0</a> <br>
@@ -26,7 +26,7 @@
                 </li>
                 <li class="my-5">
                     「実行」を押すとデータが書き込まれます 
-                    <img src="/storage/img/capture1.png" alt="" class="w-3/4">
+                    <img src="/storage/img/capture1.png" alt="" class="max-w-lg">
                 </li>
             </ol>
         </div>

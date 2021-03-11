@@ -10,7 +10,7 @@
                         <option value="textarea">複数行テキスト</option>
                         <option value="checkbox">チェックボックス</option>
                         <option value="radio">ラジオボタン</option>
-                        <option value="file">ファイル</option>
+                        <!-- <option value="file">ファイル</option> -->
                         <option value="email">メールアドレス</option>
                     </select>
                     <button class="block mx-3 bg-blue-100 rounded-xl py-2 px-4 align-baseline flex items-center focus:outline-none hover:bg-blue-50 duration-300"> ＋ 追加</button>
@@ -52,88 +52,88 @@ export default {
             newTitle: '',
             selected: 'text',
             inputGroups: [
-                {
-                    id: 0,
-                    title: 'Text',
-                    type: 'text',
-                    name: 'answer0',
-                    editable: false,
-                    validation: {required: true},
-                    description: '',
-                    inputs: [
-                        {
-                            id: 0,
-                            label: 'ラベル0',
-                            editable: false,
-                        }
-                    ],
-                },
-                {
-                    id: 1,
-                    title: 'Check',
-                    type: 'checkbox',
-                    name: 'answer1[]',
-                    editable: false,
-                    validation: {required: true},
-                    description: '',
-                    inputs: [
-                        {
-                            id: 0,
-                            label: 'ラベル0',
-                            editable: false,
-                        }
-                    ],
-                },
-                {
-                    id: 2,
-                    title: 'Radio',
-                    type: 'radio',
-                    name: 'answer2',
-                    editable: false,
-                    validation: {required: true},
-                    description: '',
-                    inputs: [
-                        {
-                            id: 0,
-                            label: 'ラベル0',
-                            editable: false,
-                        }
-                    ],
-                },
-                {
-                    id: 3,
-                    title: 'Text area',
-                    type: 'textarea',
-                    name: 'answer3',
-                    editable: false,
-                    validation: {required: true},
-                    description: '',
-                    inputs: [
-                        {
-                            id: 0,
-                            label: 'ラベル0',
-                            editable: false,
-                        }
-                    ],
-                },
-                {
-                    id: 4,
-                    title: 'File',
-                    type: 'file',
-                    name: 'answer4',
-                    editable: false,
-                    validation: {required: true},
-                    description: '',
-                    inputs: [
-                        {
-                            id: 0,
-                            label: 'ラベル0',
-                            editable: false,
-                        }
-                    ],
-                },
+                // {
+                //     id: 0,
+                //     title: 'Text',
+                //     type: 'text',
+                //     name: 'answer0',
+                //     editable: false,
+                //     validation: {required: true},
+                //     description: '',
+                //     inputs: [
+                //         {
+                //             id: 0,
+                //             label: 'ラベル0',
+                //             editable: false,
+                //         }
+                //     ],
+                // },
+                // {
+                //     id: 1,
+                //     title: 'Check',
+                //     type: 'checkbox',
+                //     name: 'answer1[]',
+                //     editable: false,
+                //     validation: {required: true},
+                //     description: '',
+                //     inputs: [
+                //         {
+                //             id: 0,
+                //             label: 'ラベル0',
+                //             editable: false,
+                //         }
+                //     ],
+                // },
+                // {
+                //     id: 2,
+                //     title: 'Radio',
+                //     type: 'radio',
+                //     name: 'answer2',
+                //     editable: false,
+                //     validation: {required: true},
+                //     description: '',
+                //     inputs: [
+                //         {
+                //             id: 0,
+                //             label: 'ラベル0',
+                //             editable: false,
+                //         }
+                //     ],
+                // },
+                // {
+                //     id: 3,
+                //     title: 'Text area',
+                //     type: 'textarea',
+                //     name: 'answer3',
+                //     editable: false,
+                //     validation: {required: true},
+                //     description: '',
+                //     inputs: [
+                //         {
+                //             id: 0,
+                //             label: 'ラベル0',
+                //             editable: false,
+                //         }
+                //     ],
+                // },
+                // {
+                //     id: 4,
+                //     title: 'File',
+                //     type: 'file',
+                //     name: 'answer4',
+                //     editable: false,
+                //     validation: {required: true},
+                //     description: '',
+                //     inputs: [
+                //         {
+                //             id: 0,
+                //             label: 'ラベル0',
+                //             editable: false,
+                //         }
+                //     ],
+                // },
             ],
-            nextInputGroupId: 5
+            nextInputGroupId: 0
         }
     },
     methods: {
