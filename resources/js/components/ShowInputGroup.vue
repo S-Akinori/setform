@@ -5,8 +5,8 @@
 
             <!-- checkbox and radio button -->
             <div v-if="inputGroup.type == 'checkbox' || inputGroup.type == 'radio' " class="flex justify-center">
-                <div class="my-3">
-                    <custom-check :inputGroupId="inputGroup.id" :type="inputGroup.type" :name='inputGroup.name' :inputs="inputGroup.inputs" @input="updateValue" v-bind:class="inputGroup.validation" class=""></custom-check>
+                <div class="w-full my-3 mx-5 md:w-3/4">
+                    <custom-check :inputGroupId="inputGroup.id" :type="inputGroup.type" :name='inputGroup.name' :inputs="inputGroup.inputs" @input="updateValue" v-bind:class="inputGroup.validation"></custom-check>
                     <ul class="error" v-if="errors">
                         <li v-for="(error, index) in errors" v-bind:key="index" class="text-red-500">{{error}}</li>
                     </ul>
@@ -16,7 +16,7 @@
 
             <!-- textarea -->
             <div v-else-if="inputGroup.type == 'textarea'" class="flex justify-center">
-                <div class="w-3/4">
+                <div class="w-full mx-5 md:w-3/4">
                     <div v-for="(input, index) in inputGroup.inputs" v-bind:key="input.id" class="my-3">
                         <label :for="'input' + inputGroup.id + '_' + input.id">{{input.label}}</label>
                         <custom-textarea :id="'input' + inputGroup.id + '_' + input.id" :name='inputGroup.name' :value="value" @input="updateValue" class="my-3 py-1 w-full" v-bind:class="inputGroup.validation"></custom-textarea>
@@ -30,11 +30,8 @@
 
             <!-- text -->
             <div v-else class="flex justify-center">
-                <div class="w-3/4">
-                    <div v-for="(input, index) in inputGroup.inputs" v-bind:key="input.id" class="my-3">
-                        <label :for="'input' + inputGroup.id + '_' + input.id">{{input.label}}</label>
-                        <custom-input :id="'input' + inputGroup.id + '_' + input.id" :name="inputGroup.name" :type="inputGroup.type" :value="value" @input="updateValue" class="my-3 py-1 w-full" v-bind:class="inputGroup.validation"></custom-input>
-                    </div>
+                <div class="w-full mx-5 md:w-3/4">
+                    <custom-input :inputs="inputGroup.inputs" :name='inputGroup.name' :inputGroupId="inputGroup.id" :type="inputGroup.type" @input="updateValue" v-bind:class="inputGroup.validation"></custom-input>
                     <ul class="error" v-if="errors">
                         <li v-for="(error, index) in errors" v-bind:key="index" class="text-red-500">{{error}}</li>
                     </ul>

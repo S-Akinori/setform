@@ -49,6 +49,21 @@ class FormController extends Controller
         return $answers;
     }
 
+    public function storeFiles(Request $request) {
+        $path = 'public/files/' . $request->form_key;
+        $file_paths = [];
+
+        foreach ($request->file('files') as $key => $value) {
+            $file_path = $value->store($path);
+            $file_path = url('/') . '/' . $file_path;
+            $file_path = str_replace('public', 'storage', $file_path);
+            $file_paths[$request->ids[$key]] =  $file_path;
+            // $file_paths[] = [$request->ids[$key] => $file_path];
+        }
+
+        return $file_paths;
+    }
+
     /**
      * Display the specified resource.
      *
@@ -89,8 +104,15 @@ class FormController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request)
     {
-        //
+        $form = FormMaster::where('form_key', $request->form_key)->where('answer_key', $request->answer_key)->get();
+        $answers = FormAnswer::where('form_id', $form->id)->get();
+
+        $form->delete();
+        $answers->delete();
+
+        return $request->all();
+
     }
 }

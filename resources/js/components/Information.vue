@@ -2,14 +2,21 @@
     <div class="mx-3">
         <div class="my-5">
             <h2 class="font-bold">以下は重要な情報なので必ず保存してください。</h2>
-            <p>キー1 （フォーム用）: {{formKey}}</p>
-            <p>キー2 （回答確認用）: {{answerKey}}</p>
+            <p>ID1 （フォーム用）: {{formKey}}</p>
+            <p>ID2 （回答確認用）: {{answerKey}}</p>
         </div>
 
         <div class="my-5">
             <h2 class="font-bold">作成したフォームURLは以下になります。</h2>
             <a v-bind:href="'https://setform.site/form/' + formKey" class="underline">https://setform.site/form/{{formKey}}</a>
-            <p>＊「https://setform.site/form/キー1」という形になっています。</p>
+            <p>＊「https://setform.site/form/ID1」という形になっています。</p>
+        </div>
+
+        <div class="my-5">
+            <h2 class="font-bold">フォームを削除したい場合</h2>
+            <p>以下のURLにアクセスしてください。</p>
+            <a href="https://setform.site/form/delete" class="underline">https://setform.site/form/delete</a>
+            <p>＊フォーム、回答結果がすべて消去されます。一度削除すると元に戻せないのでご注意ください。</p>
         </div>
 
         <div class="my-5">
@@ -22,7 +29,7 @@
                 </li>
                 <li class="my-5">以下のURLからコードをコピーして「スクリプトエディタ」に貼り付ける<br>
                     <a href="https://gist.github.com/S-Akinori/24820c0aa19343d37aa636d671128dc0" class="underline">https://gist.github.com/S-Akinori/24820c0aa19343d37aa636d671128dc0</a> <br>
-                    ＊「ここは自身のスプレッドシートの文字列」、「キー2」、「シート名」はご自身で入力してください
+                    ＊「ここは自身のスプレッドシートの文字列」、「ID2」、「シート名」はご自身で入力してください
                 </li>
                 <li class="my-5">
                     「実行」を押すとデータが書き込まれます 

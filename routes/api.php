@@ -22,5 +22,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/form/{key}', [FormController::class, 'show']);
 Route::post('/form', [FormController::class, 'store']);
+Route::delete('/form/destory', [FormController::class, 'destroy']);
 Route::get('/answers/{key}', [FormController::class, 'showAnswers']);
 Route::post('/answers', [FormController::class, 'storeAnswers']);
+Route::post('/answers_files', [FormController::class, 'storeFiles']);
