@@ -2037,7 +2037,7 @@ __webpack_require__.r(__webpack_exports__);
 
       if (index < 0) {
         element.classList.add(className);
-        formContent.classList.add('md:mx-auto');
+        formContent.classList.add('md:mx-auto', 'md:max-w-2xl');
         formContent.classList.remove('md:max-w-md', 'md:ml-auto', 'lg:mr-16', 'lg:max-w-xl', 'xl:mr-36');
         return false;
       }
